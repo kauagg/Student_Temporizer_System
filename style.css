@@ -1,0 +1,79 @@
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#timerDisplay {
+    color: green;
+    font-size: 2em;
+    margin-top: 20px;
+}
+.botao {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.botao:hover {
+    background-color: #0056b3;
+    transform: scale(0.9);
+}
+#timeInput {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#timeInput:hover {
+    border-color: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+} 
+#timerDisplay {
+    font-size: 72px;
+    color: #007BFF;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+@keyframes rainbow {
+    0% { color: red; }
+    14% { color: orange; }
+    28% { color: yellow; }
+    42% { color: green; }
+    57% { color: blue; }
+    71% { color: indigo; }
+    85% { color: violet; }
+    100% { color: red; }
+}
+
+.title:hover {
+    animation: rainbow 1s infinite; /* Animação de arco-íris ao passar o mouse */
+}
